@@ -1,0 +1,50 @@
+<html>
+<head>
+<title>REGISTRATION FORM</title>
+</head>
+
+    <h2 ALIGN="CENTER">USER REGISTRATION FORM</h2>
+
+    <form action="Welcome.html" method="post">
+    <table border="0" align="center">
+    <tbody>
+        <tr>
+        <td><label for="name">NAME: </label></td>
+        <td><input id="name" maxlength="50" name="name" type="text" /></td>
+        </tr>
+
+        <tr>
+        <td><label for="email">EMAIL:</label></td>
+        <td><input id="email" maxlength="50" name="email" type="text" /></td>
+        </tr>
+
+        <tr>
+        <td><label for="mobile">MOBILE:</label></td>
+        <td><input id="mobile" maxlength="50" name="mobile" type="text" /></td>
+        </tr>
+
+        <tr>
+        <td><label for="city">CITY:</label></td>
+        <td><input id="city" maxlength="50" name="city" type="text" /></td>
+        </tr>
+
+        <tr>
+        <td><label for="state">STATE:</label></td>
+        <td><input id="state" maxlength="50" name="state" type="text" /></td>
+        </tr>
+
+        <tr>
+            <td><label for="country">COUNTRY:</label></td>
+            <td><input id="country" maxlength="50" name="country" type="text" /></td><br><br>
+        </tr>
+
+        <tr>
+        <td><input type="submit" value="Submit" maxlength="50" name="state" type="text" /></td>
+        </tr>
+
+
+
+</tbody>
+</table>
+</form>
+</html>
