@@ -7,8 +7,8 @@ TEAM MEMBERS:-
 
 1. Akash B
 
-2. BarathKumar P
+2. Barathkumar P
 
-3. DineshKumar G
+3. Dineshkumar G
 
 4. Hariharan V M 
