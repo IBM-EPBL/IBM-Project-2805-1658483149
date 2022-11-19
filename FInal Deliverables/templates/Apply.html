@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Register</title>
+  <script>
+    window.watsonAssistantChatOptions = {
+      integrationID: "cb7720be-031f-4117-a70f-eb9893a547a4", // The ID of this integration.
+      region: "us-south", // The region your integration is hosted in.
+      serviceInstanceID: "555443a6-fe3a-4c47-b77f-86cd464fd9e9", // The ID of your service instance.
+      onLoad: function (instance) { instance.render(); }
+    };
+    setTimeout(function () {
+      const t = document.createElement('script');
+      t.src = "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+      document.head.appendChild(t);
+    });
+  </script>
+  <style>
+    body {
+      background: rgb(255, 255, 255);
+      height: 553px;
+      text-align: center;
+      font-family: cursive;
+    }
+
+    h3 {
+      color: rgb(241, 6, 41);
+      font-size: 44px;
+      font-family: monospace;
+      
+    }
+
+    input {
+      border: 2px;
+      border-style: groove;
+      border-radius: 7px;
+      padding-top: 8px;
+      padding-left: 8px;
+      padding-bottom: 8px;
+      padding-right: 8px;
+      border-color: rgb(0, 255, 251);
+      height: 25px;
+      width: 400px;
+    }
+
+    button {
+      border: 2px;
+      border-radius: 10px;
+      padding-top: 15px;
+      padding-left: 8px;
+      padding-bottom: 8px;
+      padding-right: 8px;
+      border-style: groove;
+      width: 90px;
+      opacity: 90%;
+      border-color: rgb(0, 247, 255);
+      cursor: pointer;
+    }
+
+    .right {
+      width: 50%;
+      float: right;
+    }
+
+    .left {
+      width: 50%;
+      float: left;
+    }
+    .form_container {
+      width: 80%;
+    background-color: #d64343;
+    border-radius: 8px;
+    padding: 54px 0;
+    box-shadow: 1px 6px 37px 5px #686868;
+    margin-left: 10%;
+}
+.dummy {
+    width: 100%;
+    height: 128px;
+}
+.logt {
+    background-color: #d64343;
+    padding: 10px 26px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 100px;
+}
+  </style>
+</head>
+
+<body>
+  <h3>PLASMA REQUEST</h3>
+  <form method="post" class="form_container">
+    <div class="right">
+      <input type="text" name="blood_group" placeholder="Blood Group" required /><br><br>
+      <input type="number" name="aadhar" placeholder="Aadhar" required /><br><br>
+      <input type="text" name="state" placeholder="State" required /><br><br>
+      <input type="text" name="city" placeholder="City" required /><br><br>
+      <input type="password" name="password" placeholder="Password" required /><br><br>
+    </div>
+    <div class="left">
+      <input type="text" name="name" placeholder="Name" required /><br><br>
+      <input type="email" name="email" placeholder="Email" required /><br><br>
+      <input type="number" name="mobile" placeholder="Mobile" required /><br><br>
+      <input type="number" name="age" placeholder="Age" required /><br><br>
+      <input type="text" name="gender" placeholder="Gender" required /><br><br>
+    </div>
+    <button type="submit">Apply</button>
+  </form>
+  <p style="color: rgb(255, 255, 255);">{{success}}</p>
+  <p style="color: rgb(255, 255, 255)">{{error}}</p>
+  <a class="logt" href="/logout">Logout</a>
+  <div class="dummy">
+
+  </div>
+</body>
+
+</html>

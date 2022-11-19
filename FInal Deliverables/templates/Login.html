@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Login</title>
+    <style>
+        /* body {
+            background: linear-gradient(white, white, rgb(156, 244, 238), rgb(60, 255, 242), rgb(25, 255, 240));
+            height: 600px;
+            text-align: center;
+            font-family: cursive;
+        } */
+
+        h3 {
+            color: rgb(237, 37, 50);
+            padding-top: 7%;
+            font-size: 40px;
+            font-family:fantasy;
+            letter-spacing: 10px;
+        }
+
+        input {
+            border: 2px;
+            border-radius: 7px;
+            padding-top: 8px;
+            padding-left: 8px;
+            padding-bottom: 8px;
+            padding-right: 8px;
+        }
+
+        button {
+            border: 2px;
+            border-radius: 10px;
+            padding-top: 8px;
+            padding-left: 8px;
+            padding-bottom: 8px;
+            padding-right: 8px;
+            width: 90px;
+            opacity: 90%;
+            cursor: pointer;
+        }
+        .login_cont{
+            display: flex;
+            width: 80%;
+        }   
+        .image img {
+    width: 100%;
+ 
+   
+}
+        .image{
+            width: 50%;
+        }
+        .login_text_cot{
+            width:40%;
+        }
+        .login_text_cot_main{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border:5px solid red;
+        }
+        .login_cont_main{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top:100px;
+          
+        }
+    </style>
+</head>
+
+<body>
+   <div class="login_cont_main">
+    <div class="login_cont">
+      
+        <div class="image">
+            <img src="../static/loginimage.jpg" width="1400px">
+        </div>
+  
+   <div class="login_text_cot">
+    <div class="login_text_cot_main">
+        <h3>LOGIN</h3>
+        <form method="POST">
+            <input type="email" name="email" placeholder="Email" required /><br><br>
+            <input type="password" name="password" placeholder="Password" required /><br><br>
+            <button type="submit">Login</button>
+        </form>
+        <p style="color: rgb(27, 161, 27);">{{success}}</p>
+        <p style="color: rgb(214, 25, 25)">{{error}}</p>
+
+        <a href="/register" style="margin-bottom:80px">Don't have an account? Register</a>
+    </div>
+   </div>
+</div>
+   </div>
+
+</body>
+
+</html>

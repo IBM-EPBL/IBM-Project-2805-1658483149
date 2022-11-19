@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Home</title>
+  <script>
+    window.watsonAssistantChatOptions = {
+      integrationID: "86ce9fb6-2ca4-48ec-aeb3-ddbed260132b", // The ID of this integration.
+      region: "us-south", // The region your integration is hosted in.
+      serviceInstanceID: "77eeeda2-2b53-4a2e-bfcd-3b68cd38e464", // The ID of your service instance.
+      onLoad: function (instance) { instance.render(); }
+    };
+    setTimeout(function () {
+      const t = document.createElement('script');
+      t.src = "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+      document.head.appendChild(t);
+    });
+  </script>
+  <style>
+    body {
+      overflow: hidden;
+      background-color: #60010e;
+    }
+
+    img {
+      width: 100%;
+      height: 100vh;
+      object-fit: cover;
+
+      filter: brightness(0.5);
+
+      z-index: -1;
+    }
+
+    button a {
+      text-decoration: none;
+      color: black;
+      font-weight: 600;
+    }
+
+    button {
+    border-radius: 10px;
+    padding: 15px 44px;
+    outline: none;
+    border: none;
+    width: 203px;
+    font-size: 16px;
+    z-index: 2;
+;
+}
+
+button:hover{
+  background-color: #c4e7ff
+}
+
+    .btn1 {
+      position: absolute;
+      top: 25px;
+      right: 18px;
+      z-index: 2;
+    }
+    .btn_cont{
+position: absolute;
+top:35%;
+    }
+    .btn_cont button {
+    margin-top: 43px;
+    margin-left: 170px;
+    padding: 33px;
+    font-size: 25px;
+}
+  </style>
+</head>
+
+<body>
+  <img src="../static/homeimage.jpg">
+  <center>
+    <h1> WELCOME!!</h1><Br>
+    <div class="btn_cont">
+      <button><a href="/rqst">APPLY</a></button><br><br>
+      <button><a href="/apply">REQUEST</a></button><br><br>
+    </div>
+    <button class="btn1"><a href="/logout">LOGOUT</a></button>
+  </center>
+</body>
+
+</html>
